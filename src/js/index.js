@@ -13,7 +13,6 @@ const deleteLiTag = function (event) {
   targetLi.remove()
 }
 
-
 const createLiTag = function (value) {
   // create li tag
   const LiTag = document.createElement('li')
@@ -25,7 +24,6 @@ const createLiTag = function (value) {
   spanTag.innerText = value
   //put delete text into delete button
   deleteButton.innerText = 'Delete'
-
   //add listen event to delete button
   deleteButton.addEventListener('click', deleteLiTag)
   //put span and delete into li tag
